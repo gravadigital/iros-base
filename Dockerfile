@@ -25,6 +25,7 @@ RUN apt-get install -y --fix-missing \
 
 RUN pip3 install dlib
 RUN pip3 install numpy
+RUN pip3 install pymongo
 RUN pip3 install face_recognition
 RUN pip3 install scipy
 RUN apt-get install python-opencv -y
