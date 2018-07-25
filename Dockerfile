@@ -32,4 +32,5 @@ RUN apt-get install python-opencv -y
 RUN apt install libopencv-dev -y
 RUN pip3 install python-dotenv
 RUN pip3 install bottle
+RUN pip3 install requests
 CMD bash
