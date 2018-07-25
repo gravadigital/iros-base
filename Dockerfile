@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.6-slim-stretch
 
 RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
@@ -28,9 +28,9 @@ RUN pip3 install numpy
 RUN pip3 install pymongo
 RUN pip3 install face_recognition
 RUN pip3 install scipy
-RUN apt-get install python-opencv -y
-RUN apt install libopencv-dev -y
+RUN pip3 install opencv-python
 RUN pip3 install python-dotenv
 RUN pip3 install bottle
 RUN pip3 install requests
+RUN apt  install libopencv-dev -y
 CMD bash
