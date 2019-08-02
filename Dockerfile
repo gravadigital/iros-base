@@ -4,6 +4,11 @@ RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
     build-essential \
     cmake \
+    tesseract-ocr \
+    libtesseract-dev \
+    pytesseract \
+    tesseract-ocr-spa \
+    tesseract-ocr-eng \
     gfortran \
     wget \
     curl \
